@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0b0f1f"
+    tools:context=".addEventFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="760dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="left|top"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/saveAddEvent"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@drawable/drawable_shape_10"
+                    android:clickable="true"
+                    android:clipToPadding="false"
+                    android:gravity="center_horizontal|bottom"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5.33dp"
+                    android:paddingRight="5.33dp"
+                    android:paddingBottom="4.5dp">
+
+                    <TextView
+                        android:id="@+id/cancelAddEvent"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:gravity="left|center_vertical"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="Cancel"
+                        android:textColor="#FF80B3FF"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginEnd="10dp"
+                        android:gravity="left|center_vertical"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="Save"
+                        android:textColor="#FF80B3FF"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="15dp"
+                    android:gravity="left|center_vertical"
+                    android:includeFontPadding="false"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="New event"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="15dp"
+                    android:clipToPadding="false"
+                    android:gravity="left|center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingTop="0.83dp"
+                    android:paddingBottom="0.83dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="6dp"
+                        android:gravity="start|center_vertical"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="@string/AddEventTitle"
+                        android:textColor="#FFEBEBF5"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/drawable_shape_11"
+                    android:gravity="start|center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="2.67dp"
+                    android:paddingTop="2.67dp"
+                    android:paddingRight="2.67dp"
+                    android:paddingBottom="2.67dp">
+
+                    <EditText
+                        android:id="@+id/titleInput"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@null"
+                        android:inputType="text"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="15dp"
+                    android:clipToPadding="false"
+                    android:gravity="left|center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingTop="0.83dp"
+                    android:paddingBottom="0.83dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="6dp"
+                        android:gravity="start|center_vertical"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="Class name"
+                        android:textColor="#FFEBEBF5"
+                        android:textSize="15sp"  />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/drawable_shape_11"
+                    android:gravity="start|center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="2.67dp"
+                    android:paddingTop="2.67dp"
+                    android:paddingRight="2.67dp"
+                    android:paddingBottom="2.67dp">
+
+                    <EditText
+                        android:id="@+id/classNameInput"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@null"
+                        android:inputType="text"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="15dp"
+                    android:clipToPadding="false"
+                    android:gravity="left|center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingTop="0.83dp"
+                    android:paddingBottom="0.83dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="6dp"
+                        android:gravity="start|center_vertical"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="Details"
+                        android:textColor="#FFEBEBF5"
+                        android:textSize="15sp"  />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/drawable_shape_11"
+                    android:gravity="start|center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="2.67dp"
+                    android:paddingTop="2.67dp"
+                    android:paddingRight="2.67dp"
+                    android:paddingBottom="2.67dp">
+
+                    <EditText
+                        android:id="@+id/detailsInput"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@null"
+                        android:inputType="text"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_gravity="bottom|start"
+                        android:layout_marginTop="6dp"
+                        android:background="@drawable/drawable_shape_2"
+                        android:gravity="start|top"
+                        android:orientation="horizontal"
+                        android:paddingTop="3.33dp">
+
+                        <LinearLayout
+                            android:id="@+id/today"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:clickable="true"
+                            android:clipToPadding="false"
+                            android:focusable="true"
+                            android:gravity="center_horizontal|top"
+                            android:orientation="vertical"
+                            android:scaleType="fitXY">
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="6dp"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/drawable_image_1" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="15dp"
+                                android:gravity="center_horizontal|center_vertical"
+                                android:includeFontPadding="false"
+                                android:maxLines="1"
+                                android:singleLine="true"
+                                android:text="Today"
+                                android:textColor="#FF80B3FF"
+                                android:textSize="10sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/schedule"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:clickable="true"
+                            android:clipToPadding="false"
+                            android:focusable="true"
+                            android:gravity="center_horizontal|top"
+                            android:orientation="vertical"
+                            android:scaleType="fitXY">
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="6dp"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/drawable_image_2" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="15dp"
+                                android:gravity="center_horizontal|center_vertical"
+                                android:includeFontPadding="false"
+                                android:maxLines="1"
+                                android:singleLine="true"
+                                android:text="Schedule"
+                                android:textColor="#FFEBEBF5"
+                                android:textSize="10dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/toDo"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:clickable="true"
+                            android:clipToPadding="false"
+                            android:focusable="true"
+                            android:gravity="center_horizontal|top"
+                            android:orientation="vertical"
+                            android:paddingTop="1dp"
+                            android:paddingBottom="0.33dp"
+                            android:scaleType="fitXY">
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="6dp"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/drawable_image_3" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="15dp"
+                                android:gravity="center_horizontal|center_vertical"
+                                android:includeFontPadding="false"
+                                android:maxLines="1"
+                                android:singleLine="true"
+                                android:text="To Do"
+                                android:textColor="#FFEBEBF5"
+                                android:textSize="10dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/settings"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:clickable="true"
+                            android:clipToPadding="false"
+                            android:focusable="true"
+                            android:gravity="center_horizontal|top"
+                            android:orientation="vertical"
+                            android:paddingTop="1dp"
+                            android:paddingBottom="0.33dp"
+                            android:scaleType="fitXY">
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="6dp"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/drawable_image_4" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="15dp"
+                                android:gravity="center_horizontal|center_vertical"
+                                android:includeFontPadding="false"
+                                android:maxLines="1"
+                                android:singleLine="true"
+                                android:text="Settings"
+                                android:textColor="#FFEBEBF5"
+                                android:textSize="10dp" />
+                        </LinearLayout>
+
+            </LinearLayout>
+        </FrameLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
